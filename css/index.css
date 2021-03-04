@@ -151,6 +151,7 @@
   p {
     font-size: 1.6rem;
     line-height: 1.4;
+    margin-top: 16px
   }
   .container {
     max-width: 800px;
@@ -164,7 +165,7 @@
   .header {
     display: flex;
     flex-direction: column;
-    background-color: #F9F9F4;
+    background-color: black;
   }
   @media (max-width: 500px) {
     .header {
@@ -188,28 +189,44 @@
     margin-right: 15px;
     margin:0 auto;
   }
+  @media(max-width: 500px){
+    .logo{
+      position: absolute;
+      left:146px;
+      top: 6px;
+    }
+  }
   nav {
     text-align: center;
     padding-bottom: 10px;
   }
   nav a {
     text-decoration: none;
-    color:#FA6E7D ;
+    color:#DA2C07 ;
     font-size: 1.5rem;
     padding: 17px;
     font-weight: bold;
   }
-  
+  @media(max-width: 500px){
+    nav a {
+      padding: 11px;
+    }
+  }
   h1 {
     display: flex;
     justify-content: center;
     padding-top: 10px;
     font-size: 4rem;
     padding-bottom: 15px;
-    color: #FA6E7D ;
+    color:#DA2C07 ;
+  }
+  @media(max-width: 500px){
+    h1 {
+      padding-top:66px
+    }
   }
   footer {
-    color: #FA6E7D ;
+    color: #DA2C07 ;
     background: #F6CBD9 ;
     padding: 20px 0;
     border: 1px double #e0e0e0;
@@ -235,7 +252,7 @@
   }
   .bottom-nav a{
     text-decoration: none;
-    color:#656363;
+    color:#000000;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
@@ -289,12 +306,23 @@
     color: #31393c;
     padding-left: 180px;
   }
+  @media(max-width: 500px){
+    .home .intro h2 {
+      padding-left:1px
+    }
+  }
   .home .intro p {
     padding: 10px;
     color: black;
   }
+  @media(max-width:500px){
+    .home .intro p {
+      padding-left: 1px;
+    }
+  }
   .home .intro .Mixed-Family {
     width: 100%;
+    height:100%
   }
   .home .experiences h3 {
     margin-top: 40px;
@@ -309,8 +337,6 @@
     margin:0 auto;
     flex:50%;
     padding: 0 4px;
-    
-    
   }
   .banana img {
     width:100%;
@@ -319,12 +345,18 @@
     margin-bottom: 10px;
   }
   article{
-    position:top;
     width:100%;
     height:379px;
     margin-bottom:100px;
     margin-top:50px;
     display:flex;
+    }
+    @media(max-width: 500px){
+      article{
+        display: block;
+        margin-bottom: 473px;
+      
+      }
     }
     hr{
       border-bottom: 1px  dashed black;
@@ -338,7 +370,7 @@
       font-size:18px;
       margin-top:20px;
       border: 1px solid #000000;
-      background-color: #62B6CB;
+      background-color: #000000;
       color:white
   }
   button:hover{
@@ -347,21 +379,25 @@
   }
   .home .experiences .banana .wine {
     margin-right: 5px;
-    /* width: 100%; */
+    width: 100%;
+    height:60%;
     border: 2px solid black;
   }
   .home .experiences .banana .yogie {
     margin-right: 5px;
-    /* width: 100%; */
+    width: 100%;
+    height:60%;
     border: 2px solid black;
   }
   .home .experiences .banana .climbing {
     margin-right: 5px;
-    /* width: 100%; */
+    width: 100%;
+    height: 60%;
     border: 2px solid black;
   }
   .home .experiences .banana .twentySixMiles {
-    /* width: 100%; */
+    width: 100%;
+    height: 60%;
     border: 2px solid black;
   }
   @media (max-width: 500px) {
